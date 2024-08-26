@@ -4,6 +4,7 @@ const Carcard = ({ info }) => {
        <div className="individualcard">
         <h2>{info.Make_Name}</h2>
         <p>{info.Model_Name}</p>
+        <img></img>
        </div>
     )
       

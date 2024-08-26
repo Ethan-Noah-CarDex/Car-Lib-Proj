@@ -14,37 +14,11 @@
 }
 
 .individual-card {
-  display: grid;
+  display: 'grid';
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.individual-card {
+  gap: '20px';
+  padding: '20px';
   background-color: #f4f4f4;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  text-align: center;
 }
 
-.individual-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
 
-.individual-card h2 {
-  margin: 10px 0;
-  font-size: 1.5rem;
-}
-
-.individual-card p {
-  margin: 5px 0;
-  color: #666;
-}
-
-.individual-card:hover {
-  transform: translateY(-5px);
-}
