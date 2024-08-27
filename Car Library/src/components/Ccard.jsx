@@ -1,9 +1,8 @@
-const Carcard = ({ info }) => {
-    console.log(info)
+const Carcard = ({ car }) => {
     return (
        <div className="individualcard">
-        <h2>{info.Make_Name}</h2>
-        <p>{info.Model_Name}</p>
+        <h2>{car.Make_Name}</h2>
+        <p>{car.Model_Name}</p>
         <img></img>
        </div>
     )
