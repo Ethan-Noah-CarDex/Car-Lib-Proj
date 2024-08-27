@@ -6,7 +6,7 @@ const CarProvider = ({ children }) => {
     const [cars, setCar] = useState([]);
     const [filteredCars, setFilteredCars] = useState("")
     const [error, setError] = useState('');
-    const []
+    
 
     //useEffect
     useEffect(()=>{

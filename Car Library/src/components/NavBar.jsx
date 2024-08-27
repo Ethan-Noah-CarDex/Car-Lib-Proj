@@ -31,7 +31,7 @@ return (
     <>
     <nav>
         <h1>Car Lib</h1>
-        <h2>Hondas in data base:{cars.length}</h2>
+        <h2>Hondas in data base:{cars?.filter(car => car.Model_Name.includes(filteredCars)).length}</h2>
         <input value={filteredCars} onChange={(e) => setFilteredCars(e.target.value)} className="prompt" placeholder="Search Model " />
 
     </nav>
