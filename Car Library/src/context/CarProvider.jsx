@@ -4,7 +4,9 @@ import { handleFetch } from "../utils";
 
 const CarProvider = ({ children }) => {
     const [cars, setCar] = useState([]);
+    const [filteredCars, setFilteredCars] = useState("")
     const [error, setError] = useState('');
+    const []
 
     //useEffect
     useEffect(()=>{
@@ -13,15 +15,23 @@ const CarProvider = ({ children }) => {
             if(data) setCar(data.Results) 
 
             if(error) setError(error)
+            console.log(data)
    
 
         }
         fetchCall()
        
     },[])
+
+    useEffect(()=>{
+        setFilteredCars
+    })
   
      const value = {
-        cars
+        cars,
+        setCar,
+        filteredCars, 
+        setFilteredCars
     }
 
 
