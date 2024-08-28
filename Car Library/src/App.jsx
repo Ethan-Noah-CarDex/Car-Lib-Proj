@@ -18,17 +18,3 @@ function App() {
 export default App
 
 
-// import React from 'react';
-// import Card from './components/Card';  // Import the Card component
-
-// const App = () => {
-//   return (
-//     <div>
-//       <Card searchTerm="React JS" />
-//       <Card searchTerm="JavaScript" />
-//       <Card searchTerm="CSS Design" />
-//     </div>
-//   );
-// };
-
-// export default App;
