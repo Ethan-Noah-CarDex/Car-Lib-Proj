@@ -4,8 +4,9 @@ const Carcard = ({ car }) => {
        <div className="individualcard">
         <h2>{car.Make_Name}</h2>
         <p>{car.Model_Name}</p>
-        <img></img>
-       </div>
+        <a href={googleSearchUrl} target="_blank" rel="noopener noreferrer">
+        <button>Images</button>
+      </a>       </div>
     )
       
    }
