@@ -4,6 +4,7 @@ import CarContext from "../context/CarContext"
 
 
 const NavBar = () => {
+    
 
 
     const { filteredCars, setFilteredCars, cars } = useContext(CarContext);
@@ -29,11 +30,14 @@ console.log(cars.length)
 
 return (
     <>
-    <nav>
-        <h1>Car Lib</h1>
-        <h2>Hondas in data base:{cars?.filter(car => car.Model_Name.includes(filteredCars)).length}</h2>
+  
+    <nav className="navbar">
+      <ul className="navbar-links">
+        <h1>Honda Library</h1>
+        <h2>Honda's in data base:{cars?.filter(car => car.Model_Name.includes(filteredCars)).length}</h2>
         <input value={filteredCars} onChange={(e) => setFilteredCars(e.target.value)} className="prompt" placeholder="Search Model " />
-
+      </ul>
+        
     </nav>
     
     </>

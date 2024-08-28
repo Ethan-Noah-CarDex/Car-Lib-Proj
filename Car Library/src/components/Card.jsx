@@ -1,19 +1,4 @@
-const Carcard = ({ car }) => {
-   
-    return (
-       <div className="individualcard">
-        <h2>{car.Make_Name}</h2>
-        <p>{car.Model_Name}</p>
-        <img></img>
-       </div>
-    )
-      
-   }
-
-
-   export default Carcard
-
- //import React from 'react';
+import React from 'react';
 
  const Card = ({ searchTerm }) => {
    // Build the Google Image search URL
@@ -29,4 +14,4 @@ const Carcard = ({ car }) => {
    );
  };
 
-// export default Card;
+ export default Card;

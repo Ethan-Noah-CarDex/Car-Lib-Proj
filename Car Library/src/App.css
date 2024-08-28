@@ -3,27 +3,33 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  /* background: linear-gradient(135deg, #925fff, #917bfe); */
+  background-repeat: no-repeat;
+ 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-.individual-card {
-  display: 'grid';
+  
+
+
+
+
+.individualcard {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: '20px';
-  padding: '20px';
-  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #aa7cff, #ffffff);
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures content stays within the card */
+  transition: transform 0.2s; /* Smooth transition for hover effects */
+  width: 300px; /* Fixed width */
+  margin: 10px; /* Space around the card */
+}
+
+.navbar {
+  background: linear-gradient(135deg, #aa7cff, #ffffff);
+  color: rgb(0, 0, 0);
+  border-radius: 15px; /* Rounded corners */
 }
 
 
@@ -33,9 +39,7 @@
 
 }
 
-.individualcard{
-  width: 200px
-}
+
 
 @keyframes logo-spin {
   from {
@@ -57,5 +61,5 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #88888800;
 }
